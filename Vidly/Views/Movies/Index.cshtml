@@ -1,0 +1,18 @@
+﻿@model List<Vidly.Models.Movie>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <td>Movie</td>
+    </tr>
+    @for (int i = 0; i < Model.Count(); i++)
+    {
+        <tr>
+            <td>@Model[i].Name</td>
+        </tr>
+    }
+</table>
