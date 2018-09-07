@@ -226,6 +226,26 @@
     <Compile Include="Migrations\201808312207024_PopulateGenres.Designer.cs">
       <DependentUpon>201808312207024_PopulateGenres.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809072016351_AddMembershipTypesDB.cs" />
+    <Compile Include="Migrations\201809072016351_AddMembershipTypesDB.Designer.cs">
+      <DependentUpon>201809072016351_AddMembershipTypesDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809072110475_ChangeMovieProperties.cs" />
+    <Compile Include="Migrations\201809072110475_ChangeMovieProperties.Designer.cs">
+      <DependentUpon>201809072110475_ChangeMovieProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809072116584_AddGenreIDToMovieProperty.cs" />
+    <Compile Include="Migrations\201809072116584_AddGenreIDToMovieProperty.Designer.cs">
+      <DependentUpon>201809072116584_AddGenreIDToMovieProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809072123455_RemoveMovieProperties.cs" />
+    <Compile Include="Migrations\201809072123455_RemoveMovieProperties.Designer.cs">
+      <DependentUpon>201809072123455_RemoveMovieProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201809072211208_AddMovieProperty.cs" />
+    <Compile Include="Migrations\201809072211208_AddMovieProperty.Designer.cs">
+      <DependentUpon>201809072211208_AddMovieProperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -237,6 +257,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomersViewModel.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-theme.css" />
@@ -300,6 +322,9 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -335,6 +360,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808312207024_PopulateGenres.resx">
       <DependentUpon>201808312207024_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809072016351_AddMembershipTypesDB.resx">
+      <DependentUpon>201809072016351_AddMembershipTypesDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809072110475_ChangeMovieProperties.resx">
+      <DependentUpon>201809072110475_ChangeMovieProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809072116584_AddGenreIDToMovieProperty.resx">
+      <DependentUpon>201809072116584_AddGenreIDToMovieProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809072123455_RemoveMovieProperties.resx">
+      <DependentUpon>201809072123455_RemoveMovieProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809072211208_AddMovieProperty.resx">
+      <DependentUpon>201809072211208_AddMovieProperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
