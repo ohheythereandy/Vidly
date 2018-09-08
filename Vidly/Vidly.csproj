@@ -246,6 +246,10 @@
     <Compile Include="Migrations\201809072211208_AddMovieProperty.Designer.cs">
       <DependentUpon>201809072211208_AddMovieProperty.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809080140000_addedFieldstocustomer.cs" />
+    <Compile Include="Migrations\201809080140000_addedFieldstocustomer.Designer.cs">
+      <DependentUpon>201809080140000_addedFieldstocustomer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -253,6 +257,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
+    <Compile Include="Models\Min18YearsIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -375,6 +380,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809072211208_AddMovieProperty.resx">
       <DependentUpon>201809072211208_AddMovieProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809080140000_addedFieldstocustomer.resx">
+      <DependentUpon>201809080140000_addedFieldstocustomer.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -9,10 +9,12 @@ namespace Vidly.Models
     public class Customer
     {
         public int ID { get; set; }
+        [Required]
         public string Name { get; set; }
         public bool IsSubscribedToNewsLeter { get; set; }
 
         [Display(Name = "Date of Birth")]
+        [Min18YearsIfAMember]
         public DateTime? BirthDate { get; set; }
 
         public MembershipType MembershipType { get; set; }
